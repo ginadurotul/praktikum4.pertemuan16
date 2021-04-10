@@ -1,0 +1,112 @@
+Microsoft Windows [Version 10.0.18363.1440]
+(c) 2019 Microsoft Corporation. All rights reserved.
+
+E:\praktikum4.pertemuan16>git init
+Initialized empty Git repository in E:/praktikum4.pertemuan16/.git/
+
+E:\praktikum4.pertemuan16>git add .
+
+E:\praktikum4.pertemuan16>git commit -n "versi1"
+error: pathspec 'versi1' did not match any file(s) known to git
+
+E:\praktikum4.pertemuan16>git init
+Reinitialized existing Git repository in E:/praktikum4.pertemuan16/.git/
+
+E:\praktikum4.pertemuan16>git add .
+
+E:\praktikum4.pertemuan16>git commit -m "versi1"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'KMM16@DESKTOP-NFGCF8I.(none)')
+
+E:\praktikum4.pertemuan16>git config user.name ginadurotul
+
+E:\praktikum4.pertemuan16>git config user.email ginadurotul@gmail.com
+
+E:\praktikum4.pertemuan16>git commit -m "versi1"
+[master (root-commit) ebda041] versi1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 versi1.txt
+
+E:\praktikum4.pertemuan16>git remote add origin https://github.com/ginadurotul/praktikum4.pertemuan16.git
+
+E:\praktikum4.pertemuan16>git push -u origin master
+fatal: unable to access 'https://github.com/ginadurotul/praktikum4.pertemuan16.git/': Could not resolve host: github.com
+
+E:\praktikum4.pertemuan16>git add .
+
+E:\praktikum4.pertemuan16>git commit -m "versi2"
+[master 25a5500] versi2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 versi2.txt
+
+E:\praktikum4.pertemuan16>git remote add origin https://github.com/ginadurotul/praktikum4.pertemuan16.git
+error: remote origin already exists.
+
+E:\praktikum4.pertemuan16>git push -u origin master
+fatal: unable to access 'https://github.com/ginadurotul/praktikum4.pertemuan16.git/': Could not resolve host: github.com
+
+E:\praktikum4.pertemuan16>git add .
+
+E:\praktikum4.pertemuan16>git commit -m "versi3"
+On branch master
+nothing to commit, working tree clean
+
+E:\praktikum4.pertemuan16>git add .
+
+E:\praktikum4.pertemuan16>git commit -m "versi3"
+[master 9ae309a] versi3
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 versi2.txt
+
+E:\praktikum4.pertemuan16>git push -u origin master
+fatal: unable to access 'https://github.com/ginadurotul/praktikum4.pertemuan16.git/': Could not resolve host: github.com
+
+E:\praktikum4.pertemuan16>
+E:\praktikum4.pertemuan16>git commit -m "versi2"
+On branch master
+nothing to commit, working tree clean
+
+E:\praktikum4.pertemuan16>git commit -m "versi3"
+On branch master
+nothing to commit, working tree clean
+
+E:\praktikum4.pertemuan16>git log
+commit 9ae309ad10411c3cd013d864c19165f058c0da67 (HEAD -> master)
+Author: ginadurotul <ginadurotul@gmail.com>
+Date:   Sat Apr 10 09:44:32 2021 +0700
+
+    versi3
+
+commit 25a55004ae1cdf6d1084b4aceeac68c963dfc5b9
+Author: ginadurotul <ginadurotul@gmail.com>
+Date:   Sat Apr 10 09:40:51 2021 +0700
+
+    versi2
+
+commit ebda041bd716cd0f7c915cbb96c03d90be06a79f
+Author: ginadurotul <ginadurotul@gmail.com>
+Date:   Sat Apr 10 09:30:54 2021 +0700
+
+    versi1
+
+E:\praktikum4.pertemuan16>git commit -m "versi4"
+On branch master
+nothing to commit, working tree clean
+
+E:\praktikum4.pertemuan16>git push -u origin master
+fatal: unable to access 'https://github.com/ginadurotul/praktikum4.pertemuan16.git/': Could not resolve host: github.com
+
+E:\praktikum4.pertemuan16>git add .
+
+E:\praktikum4.pertemuan16>git commit -m "versi2"
